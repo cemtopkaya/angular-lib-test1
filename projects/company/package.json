@@ -1,0 +1,20 @@
+{
+  "name": "company",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "7.2.7",
+    "@angular/core": "7.2.7",
+    "@angular/material": "7.3.3",
+    "@angular/cdk": "7.3.3",
+    "@angular/animations": "7.2.7",
+    "@angular/forms": "7.2.7",
+    "@angular/router": "7.2.7"
+  },
+  "ngPackage": {
+    "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+    "dest": "../../dist-app/company-component",
+    "lib": {
+      "entryFile": "./src/public_api.ts"
+    }
+  }
+}

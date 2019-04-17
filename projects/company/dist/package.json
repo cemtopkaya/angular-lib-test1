@@ -1,0 +1,26 @@
+{
+  "name": "company",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "7.2.7",
+    "@angular/core": "7.2.7",
+    "@angular/material": "7.3.3",
+    "@angular/cdk": "7.3.3",
+    "@angular/animations": "7.2.7",
+    "@angular/forms": "7.2.7",
+    "@angular/router": "7.2.7"
+  },
+  "main": "bundles/company.umd.js",
+  "module": "fesm5/company.js",
+  "es2015": "fesm2015/company.js",
+  "esm5": "esm5/company.js",
+  "esm2015": "esm2015/company.js",
+  "fesm5": "fesm5/company.js",
+  "fesm2015": "fesm2015/company.js",
+  "typings": "company.d.ts",
+  "metadata": "company.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

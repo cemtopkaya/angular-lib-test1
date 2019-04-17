@@ -1,0 +1,49 @@
+<div id="header" *ngIf="isCompanySelected">
+	<button
+      (click)="returnBackToList()"
+        mat-icon-button >
+        <mat-icon >arrow_back_ios</mat-icon>
+      </button>
+      <span class="back-header">Firma Detayları</span>
+</div>
+<div id="content">
+  <mat-card class="mat-elevation-z1">
+    <mat-card-title>
+      Genel Bilgiler
+    </mat-card-title>
+    <mat-card-content [style.display]="display_loading">
+      <img src="https://loading.io/spinners/ellipsis/lg.discuss-ellipsis-preloader.gif" height="60" >
+    </mat-card-content> 
+    <mat-card-content  [style.display]="display_view">      
+      <h4>Firma Adı : {{company?.name}}</h4>
+      <h4>Adres :	{{company?.address}} </h4>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="mat-elevation-z1">
+    <mat-card-title>
+      Firma Kullanıcıları
+    </mat-card-title>
+    <mat-card-content>
+      <table mat-table  [dataSource]="company?.users" class="mat-elevation-z0">
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> İsim </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+          <ng-container matColumnDef="surname">
+            <th mat-header-cell *matHeaderCellDef> Soyisim </th>
+            <td mat-cell *matCellDef="let element"> {{element.surname}} </td>
+          </ng-container>
+          <ng-container matColumnDef="phonenumber">
+            <th mat-header-cell *matHeaderCellDef> Telefon No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.phonenumber}} </td>
+          </ng-container>
+          <ng-container matColumnDef="mail">
+            <th mat-header-cell *matHeaderCellDef>E-Mail </th>
+            <td mat-cell *matCellDef="let element"> {{element.mail}} </td>
+          </ng-container>
+        <tr mat-header-row *matHeaderRowDef="['name', 'surname','phonenumber','mail']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['name', 'surname','phonenumber','mail']"></tr>
+      </table>
+    </mat-card-content>
+  </mat-card>
+</div>

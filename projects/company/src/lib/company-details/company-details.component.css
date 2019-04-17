@@ -1,0 +1,26 @@
+:host{
+  font-family: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif'";
+}
+table {
+  width: 100%;
+}
+mat-card{
+  margin-top:10px;
+}
+mat-card-title{
+  border-bottom:1px solid gray;
+  padding-bottom:5px;
+  display:flex;
+  flex:1 0 0;
+}
+.back-header{
+  margin: auto 1px;
+  font-size: 180%;
+  font-family: serif;
+}
+#header{
+  display:flex;
+}
+mat-card:not([class*=mat-elevation-z]){
+ box-shadow: none !important;
+}

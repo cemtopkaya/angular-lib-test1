@@ -1,0 +1,33 @@
+table {
+  width: 100%;
+}
+:host {
+  display: block;
+  overflow: hidden; /* Hide everything that doesn't fit compoennt */
+}
+.container {
+  height: 100%;
+  width: 200%;   
+  display: flex;    
+}
+.container div{
+  margin:0 8px;
+  flex: 1; /* Evenly divide width between children */
+}
+tr{
+  cursor: pointer;
+}
+th{
+ cursor: not-allowed;
+}
+
+tr:hover{
+  background-color: #e2e2e2;
+}
+.mat-card{
+  width: 100%;
+  display: initial;
+}
+mat-card:not([class*=mat-elevation-z]){
+ box-shadow: none !important;
+}

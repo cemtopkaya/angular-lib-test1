@@ -1,0 +1,26 @@
+  <mat-card-title>
+		Liste Ayarları
+	</mat-card-title>
+	<mat-card-content>
+     <div>
+          <h3 class="card-row">Birinci Sütun Bilgisi : </h3>
+          <select name="" id="">
+              <option  *ngFor="let s of settings.data" >{{s}}</option>
+          </select>
+      </div>
+       <div>
+          <h3 class="card-row">İkinci Sütun Bilgisi : </h3>
+          <select name="" id="">
+              <option  *ngFor="let s of settings.data" >{{s}}</option>
+          </select>
+      </div>
+       <div>
+          <h3 class="card-row">Üçüncü Sütun Bilgisi : </h3>
+          <select name="" id="">
+              <option  *ngFor="let s of settings.data" >{{s}}</option>
+          </select>
+      </div>
+      <div style="text-align:right;"> 
+        <button mat-stroked-button style="background-color:#fff">Kaydet</button>
+      </div>
+   </mat-card-content>

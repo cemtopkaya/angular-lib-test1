@@ -1,0 +1,17 @@
+import * as tslib_1 from "tslib";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+let SettingsService = class SettingsService {
+    constructor(http) {
+        this.http = http;
+    }
+    getSettings() {
+        return this.http.get("../../assets/settings.json");
+    }
+};
+SettingsService = tslib_1.__decorate([
+    Injectable(),
+    tslib_1.__metadata("design:paramtypes", [HttpClient])
+], SettingsService);
+export { SettingsService };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2V0dGluZ3Muc2VydmljZS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL2NvbXBhbnkvIiwic291cmNlcyI6WyJsaWIvc2VydmljZXMvc2V0dGluZ3Muc2VydmljZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxFQUFFLFVBQVUsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUMzQyxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sc0JBQXNCLENBQUM7QUFPbEQsSUFBYSxlQUFlLEdBQTVCLE1BQWEsZUFBZTtJQUUxQixZQUFvQixJQUFnQjtRQUFoQixTQUFJLEdBQUosSUFBSSxDQUFZO0lBQUksQ0FBQztJQUV6QyxXQUFXO1FBQ1QsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBUSw0QkFBNEIsQ0FBQyxDQUFDO0lBQzVELENBQUM7Q0FFRixDQUFBO0FBUlksZUFBZTtJQUQzQixVQUFVLEVBQUU7NkNBR2UsVUFBVTtHQUZ6QixlQUFlLENBUTNCO1NBUlksZUFBZSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgSHR0cENsaWVudCB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbi9odHRwJztcclxuXHJcbmltcG9ydCB7IE9ic2VydmFibGUsIG9mLCBmcm9tIH0gZnJvbSAncnhqcyc7XHJcbmltcG9ydCB7IGZpbmQsIGZpcnN0LCBmaWx0ZXIsIG1hcCwgZGVsYXksIGNvbmNhdE1hcCB9IGZyb20gJ3J4anMvb3BlcmF0b3JzJztcclxuXHJcblxyXG5ASW5qZWN0YWJsZSgpXHJcbmV4cG9ydCBjbGFzcyBTZXR0aW5nc1NlcnZpY2Uge1xyXG5cclxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIGh0dHA6IEh0dHBDbGllbnQpIHsgfVxyXG5cclxuICBnZXRTZXR0aW5ncygpOiBPYnNlcnZhYmxlPGFueT4ge1xyXG4gICAgcmV0dXJuIHRoaXMuaHR0cC5nZXQ8YW55W10+KFwiLi4vLi4vYXNzZXRzL3NldHRpbmdzLmpzb25cIik7XHJcbiAgfVxyXG5cclxufVxyXG5cclxuIl19
